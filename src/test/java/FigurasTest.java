@@ -24,7 +24,7 @@ public class FigurasTest{
         Assert.assertEquals(Math.PI*10, fig.perimetro(),0);
 
     }
-
+/*
     @Test
     public void calcularAreas(){
         Cuadrado cuadrado = new Cuadrado(1);
@@ -35,5 +35,5 @@ public class FigurasTest{
         List<Figura> figuras = Arrays.asList(fig,fig2,fig3);
 
         Assert.assertEquals(1331, cuadrado.sumarAreasDeFiguras(figuras),10);
-    }
+    }*/
 }

@@ -36,7 +36,7 @@ public class RectanguloTest {
     }
 
 
-
+/*
     @Test
     public void sumarTodasLasAreas(){
         Cuadrado c = new Cuadrado(1);
@@ -51,6 +51,6 @@ public class RectanguloTest {
 
         Assert.assertEquals(316, c.sumarAreasDeFiguras(rectangulos),0);
     }
-
+*/
 
 }
