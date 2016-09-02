@@ -1,12 +1,11 @@
 import org.junit.Assert;
 import org.junit.Test;
-import org.omg.CORBA.DoubleHolder;
 
 /**
  * Created by damian on 02/09/16.
  */
 public class ParesOrdenadosTest {
-/*
+
     @Test
     public void crearParOrdenado(){
         //Tipar la Clase Par
@@ -18,7 +17,7 @@ public class ParesOrdenadosTest {
 
     @Test
     public void elPrimero(){
-        Par dosTres = new Par("casa",3);
+        Par<String, Integer> dosTres = new Par("casa",3);
 
         Assert.assertEquals(dosTres.first(), "casa");
     }
@@ -45,5 +44,5 @@ public class ParesOrdenadosTest {
         //acceder a la base del rectangulo que esta dentro de la variable parGroso
         Assert.assertEquals(parGroso , r.area(),0);
 
-    }*/
+    }
 }

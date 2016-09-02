@@ -1,19 +1,24 @@
 /**
  * Created by damian on 02/09/16.
  */
-public class Par {
 
-    private int first;
-    private int second;
 
-    public Par(int i, int i1) {
+
+public class Par<T, I> {
+
+    private T first;
+    private I second;
+
+    public Par(T i, I i1) {
+        this.first = i;
+        this.second = i1;
     }
 
-    public int first() {
+    public T first() {
         return this.first;
     }
 
-    public int second() {
+    public I second() {
         return this.second;
     }
 }
