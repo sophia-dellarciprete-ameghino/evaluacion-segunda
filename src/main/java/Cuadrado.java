@@ -22,9 +22,18 @@ public class Cuadrado implements Figura {
         return perimetroT;
     }
 
+
     public double sumarAreasDeCuadrados(List<Cuadrado> cuadrados) {
         double sum = 0;
         for (Cuadrado c : cuadrados){
+            sum = sum + c.area();
+        }
+        return sum;
+    }
+
+    public double sumarAreasDeFiguras(List<Figura> figuras) {
+        double sum = 0;
+        for (Figura c : figuras){
             sum = sum + c.area();
         }
         return sum;

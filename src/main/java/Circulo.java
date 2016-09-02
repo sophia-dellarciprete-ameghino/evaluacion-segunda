@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by Sophi on 2/9/2016.
  */
@@ -19,5 +21,13 @@ public class Circulo implements Figura {
         double perimetroT = 0;
         perimetroT = perimetroT + Math.PI*this.radio;
         return perimetroT;
+    }
+
+    public double sumarAreasDeFiguras(List<Figura> figuras) {
+        double sum = 0;
+        for (Figura c : figuras){
+            sum = sum + c.area();
+        }
+        return sum;
     }
 }
