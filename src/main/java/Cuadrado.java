@@ -38,4 +38,8 @@ public class Cuadrado implements Figura {
         }
         return sum;
     }
+
+    public boolean compararPerimetros(Figura f2) {
+        return this.perimetro() > f2.perimetro();
+    }
 }

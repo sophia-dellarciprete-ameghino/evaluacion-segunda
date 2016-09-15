@@ -10,4 +10,6 @@ public interface Figura {
     double perimetro();
 
     double sumarAreasDeFiguras(List<Figura> figuras);
+
+    boolean compararPerimetros(Figura f2);
 }

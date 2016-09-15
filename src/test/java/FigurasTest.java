@@ -1,6 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -36,4 +37,32 @@ public class FigurasTest{
 
         Assert.assertEquals(1331, cuadrado.sumarAreasDeFiguras(figuras),10);
     }
+
+    // Clase del 15/08
+
+
+    public void comp () {
+        Figura f1 = new Cuadrado(10);
+        Figura f2 = new Circulo(12);
+        boolean comp = f1.compararPerimetros(f2);
+
+        Assert.assertTrue(comp);
+    }
+
+    public void nTest (){
+        Figura f1 = new Cuadrado(10);
+        Figura f2 = new Circulo(12);
+        Figura f3 = new Rectangulo(15, 5);
+
+        List <Figura> figuras = new ArrayList<Figura>();
+
+        figuras.add (f1);
+        figuras.add (f2);
+        figuras.add (f3);
+
+        Dibujo d = new Dibujo (figuras);
+
+        Assert.assertEquals(45d, d.area(),0);
+    }
+
 }
