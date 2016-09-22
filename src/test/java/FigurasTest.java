@@ -38,9 +38,9 @@ public class FigurasTest{
         Assert.assertEquals(1331, cuadrado.sumarAreasDeFiguras(figuras),10);
     }
 
-    // Clase del 15/08
+    /* Clase del 15/08 */
 
-
+    @Test
     public void comp () {
         Figura f1 = new Cuadrado(10);
         Figura f2 = new Circulo(12);
@@ -49,10 +49,11 @@ public class FigurasTest{
         Assert.assertTrue(comp);
     }
 
+    @Test
     public void nTest (){
-        Figura f1 = new Cuadrado(10);
-        Figura f2 = new Circulo(12);
-        Figura f3 = new Rectangulo(15, 5);
+        Figura f1 = new Cuadrado(5);
+        Figura f2 = new Circulo(10);
+        Figura f3 = new Rectangulo(20, 10);
 
         List <Figura> figuras = new ArrayList<Figura>();
 
@@ -62,7 +63,36 @@ public class FigurasTest{
 
         Dibujo d = new Dibujo (figuras);
 
-        Assert.assertEquals(45d, d.area(),0);
+        Assert.assertEquals(539, d.area(),10);
+    }
+
+
+    /* Clase del 22/08*/
+
+    @Test
+    public void figuraEnFigura(){
+
+
+        Figura f1 = new Cuadrado(5);
+        Figura f2 = new Cuadrado(10);
+        Figura f3 = new Rectangulo(10, 100);
+
+
+        List <Figura> lista = new ArrayList<Figura>();
+
+        lista.add (f3);
+        lista.add (f1);
+
+        Dibujo d1 = new Dibujo (lista);
+
+        List <Figura> lista2 = new ArrayList<Figura>();
+        lista2.add (d1);
+        lista2.add (d1);
+        lista2.add (f2);
+
+        Dibujo d2 = new Dibujo (lista2);
+
+        Assert.assertEquals(d2.area(),2150,   0);
     }
 
 }
